@@ -14,8 +14,7 @@ interface Movie {
     Title: string,
     Type: string,
     Year: string,
-    imdbID: string,
-    liked: boolean
+    imdbID: string
 }
 
 const MovieList: React.FC = () => {

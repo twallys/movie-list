@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
+    "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
@@ -34,6 +34,15 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/pages/**/*.tsx",
+      "src/components/**/*.tsx"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -47,6 +56,8 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.4"
+    "@testing-library/react-hooks": "^3.4.2",
+    "@types/styled-components": "^5.1.4",
+    "msw": "^0.22.3"
   }
 }

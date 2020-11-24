@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img alt="MovieCraziesBanner" title="#MovieCraziesBanner" src="./assets/banner.png" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <a href="https://movie-crazies.vercel.app">🔗 Movie Crazies</a>
+</h1>
+<p align="center">🚀 Este projeto tem o objetivo de pesquisar por filmes, ver características e informações de um determinado filme além de uma lista para que seus filmes favoritos sejam colocados</p>
 
-## Available Scripts
+🏁 Assuntos nesse README
+=================
+<p align="center">
+ <a href="#features">Features</a> •
+ <a href="#pre-requisitos">Pré-requisitos</a> • 
+ <a href="#rodando-o-front">Rodando o Front End</a> • 
+ <a href="#testando-a-applicacao">Testando a Aplicação</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autor">Autor</a>
+ <a href="#licenc-a">Licença</a> • 
+</p>
 
-In the project directory, you can run:
+<h4 align="center"> 
+	🚧  Movie Crazies - React Project 🚀 Concluído... mas não quer dizer que é o fim.  🚧
+</h4>
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] Pesquisa de Filmes
+- [x] Consulta Filme
+- [x] Favorita Filmes (Persistido)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pré-requisitos
 
-### `yarn test`
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e o [Yarn](https://yarnpkg.com/getting-started/install). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎲 Rodando o Front End
 
-### `yarn build`
+```bash
+# Clone este repositório
+$ git clone <https://github.com/twallys/movie-list.git>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Acesse a pasta do projeto no terminal/cmd
+$ cd movie-list
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Instale as dependências
+$ yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Execute a aplicação
+$ yarn start
 
-### `yarn eject`
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 🎲 Testando a Aplicação
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Execute o comando
+$ yarn test
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+### 🛠 Tecnologias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As seguintes ferramentas foram usadas na construção do projeto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jestjs](https://jestjs.io)
+
+### Autor
+---
+
+<a href="https://github.com/twallys">
+ <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/26409622?s=460&u=11a0bc41219896a04b9e1d0ffa6438593d5f5d9f&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Talles Reis</b></sub></a> <a href="https://github.com/twallys" title="GitHub">🚀</a>
+
+
+Feito com ❤️ por Talles Reis 👋🏽 Quer bater um papo!?
+
+[![Linkedin Badge](https://www.linkedin.com/in/talles-r-ab9706aa/)](https://www.linkedin.com/in/tgmarinho/) 
+[![Gmail Badge](https://img.shields.io/badge/-talles.eclesia@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:talles.eclesia@gmail.com)](mailto:talles.eclesia@gmail.com)

@@ -155,3 +155,12 @@ export const Poster = styled.div`
 
     
 `;
+
+
+export const Error = styled.span `
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 1.3em;
+    display: block;
+    color: #c53030;
+`;

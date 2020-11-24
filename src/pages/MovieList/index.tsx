@@ -34,7 +34,7 @@ const MovieList: React.FC = () => {
 
     }, [flagFavorited]);
 
-    async function handleAddMovie(event: SyntheticEvent, newPage:number): Promise<void>{
+    async function handleGetLstMovie(event: SyntheticEvent, newPage:number): Promise<void>{
         event.preventDefault();
         try {
             // VERIFY IF SEARCH TEXT IS NULL
@@ -74,7 +74,7 @@ const MovieList: React.FC = () => {
         }
     }
 
-    async function handleLikedMovie(imdbID: string){
+    async function handleFavoritedMovie(imdbID: string){
         let favoritesArray = [];
         let flagIsFavorite = false;
         const favorites = sessionStorage.getItem('favorites');
@@ -112,13 +112,13 @@ const MovieList: React.FC = () => {
         <>
             <PageHeader/>
 
-            <Form hasError={!!inputError} onSubmit={(event) => handleAddMovie(event, 1)}>
+            <Form hasError={!!inputError} onSubmit={(event) => handleGetLstMovie(event, 1)}>
                 <input 
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
-                    placeholder='Search movies' 
+                    placeholder='Search Movies' 
                 />
-                <button type='submit'>Pesquisar</button>
+                <button type='submit'>Search</button>
             </Form>
 
             {inputError && <Error>{inputError}</Error>}
@@ -130,8 +130,13 @@ const MovieList: React.FC = () => {
                             src={movie.Poster} 
                             alt={movie.Title}/>
                         <div className='overlay'>
-                            <AiFillHeart cursor='pointer' size={30} color={favorites.includes(movie.imdbID) ? 'red' : 'white'} onClick={() => handleLikedMovie(movie.imdbID)}/>
-                            <Link to={`/movie-details/${movie.imdbID}`} className='description'>
+                            <AiFillHeart data-testid="favorited-button" cursor='pointer' size={30} color={favorites.includes(movie.imdbID) ? 'red' : 'white'} onClick={() => handleFavoritedMovie(movie.imdbID)}/>
+                            <Link to={
+                                { 
+                                    pathname: '/movie-details', 
+                                    state: movie
+                                }
+                            } className='description'>
                                 <h1>{movie.Title}</h1>
                                 <p>{movie.Year}</p>
                             </Link>
@@ -141,8 +146,8 @@ const MovieList: React.FC = () => {
             </Movies>
             {movies.length > 0 && (
                 <Pagination firstPageAlready={page === 1}>
-                    <AiOutlineArrowLeft  size={40} onClick={(event) => handleAddMovie(event, page - 1)} />
-                    <AiOutlineArrowRight size={40} onClick={(event) => handleAddMovie(event, page + 1)} />
+                    <AiOutlineArrowLeft  size={40} onClick={(event) => handleGetLstMovie(event, page - 1)} />
+                    <AiOutlineArrowRight size={40} onClick={(event) => handleGetLstMovie(event, page + 1)} />
                 </Pagination>
             )}
             

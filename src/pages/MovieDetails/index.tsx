@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import PageHeader from '../../components/PageHeader';
 import { AiOutlineArrowLeft, AiFillHeart } from 'react-icons/ai';
@@ -8,10 +8,10 @@ import rottenTomatoesLogo from '../../assets/rotten-tomatoes-logo.png';
 
 import api from '../../services/api';
 
-import { MovieItem, MovieDescription, MovieCast, Poster, RatingItens } from './styles'
+import { MovieItem, MovieDescription, MovieCast, Poster, RatingItens, Error } from './styles'
 
 interface MovieDetailsParams {
-    id: string;
+    imdbID: string;
 }
 
 interface Movie {
@@ -29,22 +29,22 @@ interface Movie {
 }
 
 const MovieDetails: React.FC = () => {
-    const { params } = useRouteMatch<MovieDetailsParams>();
+    const params= useLocation<MovieDetailsParams>();
     const [movie, setMovie] = useState<Movie | null>(null);
     const [favorites, setFavorites] = useState('');
     const [flagFavorited, setFlagFavorited] = useState(false);
+    const [inputError, setInputError] = useState('');
 
     // USED TO CONSULT WHEN OPEN MOVIE DETAILS
     useEffect(() => {
         try {
-            api.get('', { params: { i: params.id } }).then((response) => {
+            api.get('', { params: { i: params.state.imdbID } }).then((response) => {
                 setMovie(response.data);
-                console.log(response.data);
             });
         } catch (error) {
-            console.log('Sorry, try again later!');
+            setInputError('Sorry, try again later!');
         }
-    }, [params.id]);
+    }, [params]);
 
     // USED TO SET THE FAVORITES WHEN UPDATED
     useEffect(() => {
@@ -92,6 +92,8 @@ const MovieDetails: React.FC = () => {
     return (
         <>
             <PageHeader />
+
+            {inputError && <Error>{inputError}</Error>}
 
             {movie && (
                 <MovieItem>

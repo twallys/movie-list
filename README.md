@@ -11,12 +11,11 @@
 =================
 <p align="center">
  <a href="#features">Features</a> •
- <a href="#pre-requisitos">Pré-requisitos</a> • 
- <a href="#rodando-o-front">Rodando o Front End</a> • 
- <a href="#testando-a-applicacao">Testando a Aplicação</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#pré-requisitos">Pré-requisitos</a> • 
+ <a href="#-rodando-o-front-end">Rodando o Front End</a> • 
+ <a href="#-testando-a-aplicação">Testando a Aplicação</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
- <a href="#licenc-a">Licença</a> • 
 </p>
 
 <h4 align="center"> 
@@ -81,5 +80,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com ❤️ por Talles Reis 👋🏽 Quer bater um papo!?
 
-[![Linkedin Badge](https://www.linkedin.com/in/talles-r-ab9706aa/)](https://www.linkedin.com/in/tgmarinho/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/talles-r-ab9706aa/)](https://www.linkedin.com/in/talles-r-ab9706aa/) 
 [![Gmail Badge](https://img.shields.io/badge/-talles.eclesia@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:talles.eclesia@gmail.com)](mailto:talles.eclesia@gmail.com)

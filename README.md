@@ -80,5 +80,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com ❤️ por Talles Reis 👋🏽 Quer bater um papo!?
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/talles-r-ab9706aa/)](https://www.linkedin.com/in/talles-r-ab9706aa/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Talles-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/talles-r-ab9706aa/)](https://www.linkedin.com/in/talles-r-ab9706aa/) 
 [![Gmail Badge](https://img.shields.io/badge/-talles.eclesia@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:talles.eclesia@gmail.com)](mailto:talles.eclesia@gmail.com)

@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="MovieCraziesBanner" title="#MovieCraziesBanner" src="./assets/banner.png" />
+  <img alt="MovieCraziesBanner" title="#MovieCraziesBanner" src="./src/assets/banner.png" />
 </h1>
 
 <h1 align="center">

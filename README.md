@@ -5,7 +5,10 @@
 <h1 align="center">
     <a href="https://movie-crazies.vercel.app">🔗 Movie Crazies</a>
 </h1>
-<p align="center">🚀 Este projeto tem o objetivo de pesquisar por filmes, ver características e informações de um determinado filme além de uma lista para que seus filmes favoritos sejam colocados</p>
+<p align="center">🚀 Este projeto tem o objetivo de pesquisar por filmes, ver características e informações de um determinado filme além de uma lista para que seus filmes favoritos sejam colocados. <a href="https://movie-crazies.vercel.app">🔗 Acesse aqui a versão em Produção</a></p>
+
+<br/>
+<br/>
 
 🏁 Assuntos nesse README
 =================

@@ -4,14 +4,13 @@ import { shade } from 'polished';
 export const MovieItem = styled.div`
     
     color: #fff;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
     
 `;
 
@@ -19,7 +18,9 @@ export const MovieDescription = styled.div`
     display: flex;
     flex-direction: column;
     margin: 30px;
-    max-width: 500px;
+    max-width: 600px;
+    padding-left: 30px;
+    padding-right: 10px;
 
     a{
         width: 5%;
@@ -72,30 +73,31 @@ export const RatingItens = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    // justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
     div{
-        width: 220px;
+        width: 163px;
         height: 50px;
         background: transparent;
         border: 2px solid #666;
         border-radius: 5px;
         margin-right: 5px;
-
-        vertical-align:center;
+        margin-top: 5px;
 
         font-size: 1.4em;
         color: #666;
         font-weight: bold;
 
         img{
-            width: 51%;
-            margin: 0px 5px -10px 0px;
+            width: 56%;
+            border-radius: 12px;
+            margin: -6px 5px -22px 0px;
         }
     }
 
     button{
-        width: 220px;
+        width: 163px;
         height: 50px;
         padding-bottom: 5px;
         background: transparent;
@@ -104,6 +106,9 @@ export const RatingItens = styled.div`
         color: #666;
         font-weight: bold;
         transition: background-color 0.2s;
+        margin-top: 5px;
+
+        justify-content: center;
 
         &:hover {
             background: ${shade(0.2, '#666')};
@@ -112,6 +117,8 @@ export const RatingItens = styled.div`
 
         svg{
             margin: 0px 5px -10px 0px;
+            align-items:center;
+            justify-content:center;
         }
     }
     

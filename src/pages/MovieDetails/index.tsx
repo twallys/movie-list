@@ -115,7 +115,7 @@ const MovieDetails: React.FC = () => {
                             </div>
                             <button onClick={() => handleLikedMovie(movie.imdbID)}>
                                 <AiFillHeart cursor='pointer' size={30} color={favorites.includes(movie.imdbID) ? 'red' : 'white'} />
-                                {favorites.includes(movie.imdbID) ? 'Remove from Favorites' : 'Add to Favorites'}
+                                {favorites.includes(movie.imdbID) ? 'Favorited' : 'Add to Favorites'}
                             </button>
                         </RatingItens>
 
